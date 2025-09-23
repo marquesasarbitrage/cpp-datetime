@@ -1,2 +1,2 @@
 # cpp-datetime
-Datetime library coded in C++ with tools for financial application: Tenor, day count, etc
+Datetime library coded in C++ with utils for financial application
