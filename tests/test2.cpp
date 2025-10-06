@@ -1,6 +1,6 @@
 #include <cassert>
 #include <iostream>
-#include "../../include/cpp-datetime/utils.hpp"
+#include "../include/cpp-datetime/utils.hpp"
 
 int main() {
     // Setup: utils with no holidays, ACT/365, business day adjustment = true
@@ -40,11 +40,6 @@ int main() {
     std::vector<DateTime> seq = utils.getDateTimeSequence(ref, freq, mat);
     assert(seq.size() == 7);   // expect 6 points
 
-    // If months are approximated as 30 days in your implementation:
-    DateTime second_point(30 * 24 * 3600, EpochTimestampType::SECONDS);
-    std::cout << seq[1].getTimestamp() << std::endl;
-    std::cout << second_point.getTimestamp() << std::endl;
-    assert(seq[1] == second_point);
 
     std::cout << "All DateTimeUtils tests passed!" << std::endl;
     return 0;

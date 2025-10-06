@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../../include/cpp-datetime/tenor.hpp"
+#include "../include/cpp-datetime/tenor.hpp"
 
 Tenor::Tenor(int value, const TenorType& tenor_type): value_(abs(value)), tenor_type_(tenor_type){}
 

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../../include/cpp-datetime/utils.hpp"
+#include "../include/cpp-datetime/utils.hpp"
 
 DateTimeUtils::DateTimeUtils(const bool adjust_business_day, const HolidayCalendar& holiday_calendar, const DayCountConvention& day_count_convention):
 adjust_business_day_(adjust_business_day), holiday_calendar_(holiday_calendar), day_count_convention_(day_count_convention){};

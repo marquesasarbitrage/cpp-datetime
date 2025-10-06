@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cassert>
-#include "../../include/cpp-datetime/datetime.hpp"
-#include "../../include/cpp-datetime/errors.hpp"
+#include "../include/cpp-datetime/datetime.hpp"
+#include "../include/cpp-datetime/errors.hpp"
 
 void testTimeDelta() {
     // Test constructor and getters
@@ -120,8 +120,7 @@ void testDateTime()
 
 int main()
 {
-    testTimeDelta(); 
-    testDateTime();
-    std::cout << "All tests passed!" << std::endl;
-    return 0; 
+    testTimeDelta();
+    testDateTime(); 
+    return 0;
 }

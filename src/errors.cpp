@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../../include/cpp-datetime/errors.hpp"
+#include "../include/cpp-datetime/errors.hpp"
 
 EndDateBeforeStartDateError::EndDateBeforeStartDateError(): message_(getMessageAsString()){}
 const char* EndDateBeforeStartDateError::what() const noexcept {return message_.c_str();}
